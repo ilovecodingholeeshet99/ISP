@@ -6,7 +6,7 @@ Character::Character()
 	damage = 5;
 	x = 1;
 	y = 1;
-	money = 100;
+	money = 95;
 	for (int i = 0; i < inventorySize; i++)
 	{
 		inventory[i] = nullptr;

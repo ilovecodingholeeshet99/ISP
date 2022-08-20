@@ -42,7 +42,7 @@ void Shop::printMenu(int &money)
 	std::cout << "*" << "                                                                                  " << " * " << std::endl;
 	std::cout << "*" << "                                                                                  " << " * " << std::endl;
 	std::cout << "*" << "                                                                                  " << " * " << std::endl;;
-	std::cout << "*" << "    Amount of money: " << money << "                                                          " << " * " << std::endl;
+	std::cout << "*" << "    Amount of money: " << money << "                                                           "<< " * " << std::endl;
 	std::cout << "*" << "                                                                                  " << " * " << std::endl;
 	std::cout << "*" << "                                                                                  " << " * " << std::endl;
 	std::cout << "*" << "                                                                                  " << " * " << std::endl;
@@ -65,7 +65,7 @@ Object* Shop::buy(int number, int &money)
 		buffer = "Item does not belong in the shop brotha";
 		return nullptr;
 	}
-	buffer = "You bought "  + accessory[number - 49]->gettypeofObject();;
+	buffer = "You bought "  + accessory[number - 49]->gettypeofObject() + "!";
 	if (money < accessory[number - 49]->getPrice())
 	{
 		buffer = "You are broke! You cannot buy anymore things in the store anymore! ";

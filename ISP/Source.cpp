@@ -46,7 +46,7 @@ int main()
 		{
 			menu.printMenu(hero->getMoney());
 		}
-		hero->printInventory();
+		/*hero->printInventory();*/
 		dir = _getch();
 		std::cout << std::endl;
 		if (shopOpen)
